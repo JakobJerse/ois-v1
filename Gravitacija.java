@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Gravitacija {
     public static void main(String[] args) {
-        System.out.println("OIS je zakon");
+
 
         //ubi me prosim, hvala
 
@@ -11,6 +11,7 @@ public class Gravitacija {
         double visina = sc.nextDouble();
 
         System.out.println(pospesek(visina));
+        System.out.println(visina);
     }
 
     private static double pospesek(double nadmorskaVisina){
@@ -19,5 +20,6 @@ public class Gravitacija {
         double RADIJ_ZEMLJE = 6.371 * Math.pow(10,6);
 
         return (G * MASA_ZEMLJE) / Math.pow((RADIJ_ZEMLJE + nadmorskaVisina), 2);
+
     }
 }
